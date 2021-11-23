@@ -12,5 +12,5 @@ output "ec2_ip" {
 }
 
 output "ec2_id" {
-    value = aws_instance.ec2.instance_id
+    value = aws_instance.ec2.id
 }
