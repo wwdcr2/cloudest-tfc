@@ -1,6 +1,6 @@
-# provider "aws" {
-#   region = "ap-northeast-2"
-# }
+provider "aws" {
+  region = "ap-northeast-2"
+}
 
 # resource "aws_instance" "ec2" {
 #   ami = "ami-0a5a6128e65676ebb"
