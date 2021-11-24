@@ -1,4 +1,3 @@
-##########################################################################################
 ### VPC 및 기본 네트워크 구성
 #Create the VPC
 resource "aws_vpc" "apr-vpc-01" {
@@ -10,7 +9,6 @@ resource "aws_vpc" "apr-vpc-01" {
   }
 }
 
-##########################################################################################
 #Define the subnet
 resource "aws_subnet" "apr-subnet-private-vpc01-prd-a01" {
   vpc_id = aws_vpc.apr-vpc-01.id
@@ -21,8 +19,6 @@ resource "aws_subnet" "apr-subnet-private-vpc01-prd-a01" {
   }
 }
 
-
-##########################################################################################
 #Define the internet gateway
 resource "aws_internet_gateway" "apr-igw-vpc01" {
   vpc_id = aws_vpc.apr-vpc-01.id
